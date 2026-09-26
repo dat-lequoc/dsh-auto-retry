@@ -1,0 +1,5 @@
+# Mounts the retry listener. Edit patterns and backoff in
+# Settings -> Plugins -> Auto Retry, or override `config` here.
+- insert:
+    - id: dsh-auto-retry
+      name: dsh-auto-retry

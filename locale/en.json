@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Auto Retry",
+    "description": "Retries a failed model request when its error message matches one of your patterns, waiting 5s, 30s, 60s… between attempts."
+  }
+}
