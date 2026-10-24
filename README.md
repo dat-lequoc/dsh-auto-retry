@@ -6,6 +6,7 @@ The built-in `@deepseek-ai/dsh-llm-retry` retries only by error code (`RATE_LIMI
 
 ```
 Codex error: Our servers are currently overloaded. Please try again later.
+Codex error: An error occurred while processing your request. You can retry your request, ...
 Kiro service exception error: {"message":"Encountered an unexpected error when processing the request, please try again."}
 ```
 
@@ -24,7 +25,7 @@ Settings → Plugins → Auto Retry → configure the row. Changes apply to the 
 | Field | Default | Meaning |
 |---|---|---|
 | `enabled` | `true` | Turn automatic retry on or off. |
-| `patterns` | `servers are currently overloaded`, `unexpected error when processing the request`, `too many pending requests` | Case-insensitive substrings of the error message. |
+| `patterns` | `servers are currently overloaded`, `unexpected error when processing the request`, `too many pending requests`, `an error occurred while processing your request` | Case-insensitive substrings of the error message. |
 | `delaysSeconds` | `[5, 30, 60, 120, 300]` | Wait before each retry; the last value repeats. |
 | `maxRetries` | `10` | Retries per failed step; `0` retries until success or you stop the turn. |
 
